@@ -1,87 +1,51 @@
-# Project Title
+# Convert Quod Libet Playlist file to M3U8
 
 Python script to convert [Quod Libet](https://quodlibet.readthedocs.io/en/latest/#) playlist file to M3U8 playlist file compatible with Sony ZX and Sony NW series audio players.
 
 ## Getting Started
 
-Go 
+Download and install [Python 3](https://www.python.org/downloads/)
 
-### Prerequisites
+## Running the Script
 
-What things you need to install the software and how to install them
+	Download QL->Sony.py script, open Terminal and navigate to folder containing script 
+	i.e.:
+	'''
+		cd /Users/username/Downloads
+	'''
+	
+	Run the script with correct inputs in Terminal
+	i.e.:  
+	'''
+		python3 ./QL-\>Sony.py /Users/username/.quodlibet/playlists /Users/username/MusicFolder /Users/username/PathToWriteTo
+	'''
 
-```
-Give examples
-```
+	This python script takes three inputs:
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+	* Input 1 = path to Quod Libet playlist folder, should be in the form: /Users/username/.quodlibet/playlists
+		- See [Quod Libet FAQs](https://quodlibet.readthedocs.io/en/latest/guide/faq.html)
+	* Input 2 = path to source folder containing all Quod Libet music
+		- Open up a Quod Libet playlist file in any text editor
+		- Example playlist file:
+		'''
+			/Users/username/Music/More Life (Album)/08 4422.flac
+			/Users/username/Music/Beauty Behind The Madness (Album)/06 Acquainted.flac
+			/Users/username/Music/Kaleidoscope Dream The Water Preview (Single)/01 Adorn.flac
+			/Users/username/Music/So Far Gone (Album)/03 Best I Ever Had.flac
+			/Users/username/Music/California (Single)/01 California.flac
+		'''
+		- The corrent file path ends with the lowest parent folder that contains all above file paths
+		- In the above example it would be: /Users/username/Music
+	* Input 3 = path to write new playlist files to
+		- This can be any file location of your choosing
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Quod Libet](https://quodlibet.readthedocs.io/en/latest/#)
+* [Sublime Text](https://www.sublimetext.com/) - Text editor
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Michael Liu** - [msl40](https://github.com/msl40)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
