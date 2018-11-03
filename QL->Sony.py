@@ -6,7 +6,7 @@ __status__ = "completed"
 
 import os
 import sys
-import urllib2
+import urllib.request
 
 playlistDict = {}
 
@@ -66,7 +66,7 @@ def convert(deleteString):
 def create_files(writePath):
 	os.path.join(writePath, )
 	for playlist, songs in playlistDict.items():
-		clean_playlist = urllib2.unquote(playlist)
+		clean_playlist = urllib.request.unquote(playlist)
 		file_out = open(writePath + "/" + clean_playlist + ".M3U8", "w")
 		file_out.write("#EXTM3U\n")
 		for each in songs:
@@ -112,7 +112,7 @@ if __name__ == "__main__":
 
 	# convert format/syntax of playlist data to be compatibile with Sony players
 	convert(deleteString)
-	
+
 	# write new playlist files to given path 
 	create_files(writePath)
 
