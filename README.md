@@ -10,15 +10,13 @@ Download and install [Python 3](https://www.python.org/downloads/)
 
 Download QL->Sony.py script, open Terminal and navigate to folder containing script 
 i.e.:
-'''
 	cd /Users/username/Downloads
-'''
+
 
 Run the script with correct inputs in Terminal
 i.e.:  
-'''
 	python3 ./QL-\>Sony.py /Users/username/.quodlibet/playlists /Users/username/MusicFolder /Users/username/PathToWriteTo
-'''
+
 
 This python script takes three inputs:
 
@@ -27,13 +25,13 @@ This python script takes three inputs:
 * Input 2 = path to source folder containing all Quod Libet music
 	- Open up a Quod Libet playlist file in any text editor
 	- Example playlist file:
-	'''
+	
 		/Users/username/Music/More Life (Album)/08 4422.flac
 		/Users/username/Music/Beauty Behind The Madness (Album)/06 Acquainted.flac
 		/Users/username/Music/Kaleidoscope Dream The Water Preview (Single)/01 Adorn.flac
 		/Users/username/Music/So Far Gone (Album)/03 Best I Ever Had.flac
 		/Users/username/Music/California (Single)/01 California.flac
-	'''
+	
 	- The corrent file path ends with the lowest parent folder that contains all above file paths
 	- In the above example it would be: /Users/username/Music
 * Input 3 = path to write new playlist files to
@@ -41,7 +39,7 @@ This python script takes three inputs:
 
 ## Built With
 
-* [Quod Libet](https://quodlibet.readthedocs.io/en/latest/#) - GTK+-based audio player written in Python
+* [Quod Libet](https://quodlibet.readthedocs.io/en/latest/#) - GTK+ - based audio player written in Python
 * [Sublime Text](https://www.sublimetext.com/) - Text editor
 
 
