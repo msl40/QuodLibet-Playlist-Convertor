@@ -13,7 +13,7 @@ i.e.:
 	cd /Users/username/Downloads
 
 
-Run the script with correct inputs in Terminal  
+Navigate to the folder containing QL->Sony.py script and run the script with correct inputs in Terminal  
 i.e.:  
 	python3 ./QL-\>Sony.py /Users/username/.quodlibet/playlists /Users/username/MusicFolder /Users/username/PathToWriteTo
 
