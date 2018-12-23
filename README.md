@@ -41,7 +41,7 @@ This python script takes three inputs:
 	- This can be any folder location of your choosing
 	- In this example I'll choose the same folder as where the music is stored: /Users/username/Music
 * **What command line should look like using above example:** 
-	python3 ./QL-\>Sony.py  /Users/username/.quodlibet/playlists  /Users/username/Music  /Users/username/PathToWriteTo
+	python3 ./QL-\>Sony.py  /Users/username/.quodlibet/playlists  /Users/username/Music  /Users/username/Music
 
 
 ## Built With
