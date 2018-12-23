@@ -26,7 +26,7 @@ This python script takes three inputs:
 * **Input 2** = path to source folder containing all Quod Libet music
 	- To find the correct file path: 
 		- Open up a Quod Libet playlist file in any text editor
-		- Example playlist file:
+		- Inside a Quod Libet playlist file, you'll see:
 	
 			/Users/username/Music/More Life (Album)/08 4422.flac  
 			/Users/username/Music/Beauty Behind The Madness (Album)/06 Acquainted.flac  
@@ -34,11 +34,15 @@ This python script takes three inputs:
 			/Users/username/Music/So Far Gone (Album)/03 Best I Ever Had.flac  
 			/Users/username/Music/California (Single)/01 California.flac  
 
-		- The corrent file path ends with the lowest parent folder that contains all above file paths
-		- In the above example it would be: /Users/username/Music/
-			* Make sure you include the last backslash!
+		- The correct file path to input into the script for the above example would be: /Users/username/Music/
+			- You want the lowest level folder that still contains all the music files
+			- Make sure you include the last backslash!
 * **Input 3** = path to write new playlist files to
 	- This can be any folder location of your choosing
+	- In this example I'll choose the same folder as where the music is stored: /Users/username/Music
+* **Example command line using above example:** = path to write new playlist files to
+	python3 ./QL-\>Sony.py  /Users/username/.quodlibet/playlists  /Users/username/Music  /Users/username/PathToWriteTo
+
 
 ## Built With
 
